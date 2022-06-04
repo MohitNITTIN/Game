@@ -1,0 +1,126 @@
+@import url(bootstrap.css);
+
+:root {
+    --game-mode-watch: #092991;
+    --game-mode-turn: #0D3EDE;
+}
+
+body {
+    background-color: var(--game-mode-watch);
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.body-mode-watch {
+    background-color: var(--game-mode-watch);
+}
+
+.body-mode-player-turn {
+    background-color: var(--game-mode-turn);
+}
+
+.board {
+    width: 540px;
+
+    margin-top: 16px;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+
+    background: linear-gradient(315deg, #00108a, #0013a4);
+    box-shadow: -5px -5px 29px #00073d,
+        5px 5px 29px #001df5;
+}
+
+.tiles {
+    margin: 4px;
+    border-radius: 4px;
+
+    background-color: #0000FF;
+}
+
+.tiles:hover {
+    background-color: dodgerblue;
+}
+
+.tiles:active {
+    background-color: #8989ee;
+
+    animation-name: animation-tile-glow;
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+}
+
+.start-animate {
+    animation-name: animation-tile-start;
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+}
+
+.glow-animate {
+    animation-name: animation-tile-glow;
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+}
+
+@keyframes animation-tile-start {
+    0% {
+        transform: scale3d(0.75, 0.75, 0.75);
+    }
+
+    30% {
+        transform: scale3d(0.80, 0.60, 0.70);
+    }
+
+    40% {
+        transform: scale3d(0.50, 1, 0.75);
+    }
+
+    50% {
+        transform: scale3d(0.90, 0.60, 0.70);
+    }
+
+    60% {
+        transform: scale3d(0.70, 0.80, 0.75);
+    }
+
+    75% {
+        transform: scale3d(0.80, 0.70, 0.75);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes animation-tile-glow {
+    0% {
+        transform: scale3d(0.75, 0.75, 0.75);
+    }
+
+    30% {
+        transform: scale3d(0.80, 0.60, 0.70);
+    }
+
+    40% {
+        transform: scale3d(0.50, 1, 0.75);
+    }
+
+    50% {
+        background-color: rgb(70, 93, 172);
+        transform: scale3d(0.90, 0.60, 0.70);
+    }
+
+    60% {
+        transform: scale3d(0.70, 0.80, 0.75);
+    }
+
+    75% {
+        transform: scale3d(0.80, 0.70, 0.75);
+    }
+
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}

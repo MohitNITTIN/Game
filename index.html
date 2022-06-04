@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style-main.css">
+
+    <title>Game</title>
+</head>
+
+<body id="game">
+
+
+    <div class="container-fluid shadow p-2">
+        <div class="display-6 text-center">Game</div>
+    </div>
+
+    <div class="container mt-2">
+        <p class="text-center">Watch the tiles. Remember the tiles. Repeat it on your turn.</p>
+    </div>
+
+    <div class="container">
+        <p id="score-board" class="fs-4 text-center ">Score: </p>
+    </div>
+
+    <div id="game-board" class="container board">
+        <div class="row">
+            <div id="tile-0" class="col ratio ratio-1x1 invisible" onclick="playerSelect(0)"></div>
+            <div id="tile-1" class="col ratio ratio-1x1 invisible" onclick="playerSelect(1)"></div>
+            <div id="tile-2" class="col ratio ratio-1x1 invisible" onclick="playerSelect(2)"></div>
+            <div id="tile-3" class="col ratio ratio-1x1 invisible" onclick="playerSelect(3)"></div>
+        </div>
+        <div class="row">
+            <div id="tile-4" class="col ratio ratio-1x1 invisible" onclick="playerSelect(4)"></div>
+            <div id="tile-5" class="col ratio ratio-1x1 invisible" onclick="playerSelect(5)"></div>
+            <div id="tile-6" class="col ratio ratio-1x1 invisible" onclick="playerSelect(6)"></div>
+            <div id="tile-7" class="col ratio ratio-1x1 invisible" onclick="playerSelect(7)"></div>
+        </div>
+        <div class="row">
+            <div id="tile-8" class="col ratio ratio-1x1 invisible" onclick="playerSelect(8)"></div>
+            <div id="tile-9" class="col ratio ratio-1x1 invisible" onclick="playerSelect(9)"></div>
+            <div id="tile-10" class="col ratio ratio-1x1 invisible" onclick="playerSelect(10)"></div>
+            <div id="tile-11" class="col ratio ratio-1x1 invisible" onclick="playerSelect(11)"></div>
+        </div>
+        <div class="row">
+            <div id="tile-12" class="col ratio ratio-1x1 invisible" onclick="playerSelect(12)"></div>
+            <div id="tile-13" class="col ratio ratio-1x1 invisible" onclick="playerSelect(13)"></div>
+            <div id="tile-14" class="col ratio ratio-1x1 invisible" onclick="playerSelect(14)"></div>
+            <div id="tile-15" class="col ratio ratio-1x1 invisible" onclick="playerSelect(15)"></div>
+        </div>
+    </div>
+
+    <div class="container mt-2">
+        <div id="game-message" class="fs-4 fw-bold text-center">Watch</div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="d-grid col-4 mx-auto">
+            <button id="btn-game" type="button" class="btn btn-dark shadow">Start Game</button>
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
